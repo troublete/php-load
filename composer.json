@@ -1,0 +1,22 @@
+{
+    "name": "troublete/load",
+    "description": "CLI progress indicator for PHP.",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Willi Eßer",
+            "email": "willi.esser@troublete.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+    	"files": [
+    		"./load.php",
+    		"./spinner.php"
+    	]
+    },
+    "require": {
+        "troublete/crayon": "^1.1"
+    }
+}
