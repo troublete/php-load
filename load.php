@@ -46,7 +46,7 @@ function loop(
 
 		if (is_bool($closureResult) && $closureResult === true) {
 			$stopped = true;
-			removeLastCharsByCount($lastMessageLength + 64);
+			removeLastCharsByCount($lastMessageLength + 16);
 			fwrite(STDOUT, $doneText);
 			fwrite(STDOUT, "\n");
 		}
