@@ -8,7 +8,7 @@ namespace Load;
  */
 function removeLastCharsByCount(int $count) {
 	$toRemove = str_repeat(' ', $count);
-	fwrite(STDOUT, "$toRemove\r");
+	fwrite(fopen('php://output', 'w'), "$toRemove\r");
 }
 
 /**
@@ -35,7 +35,7 @@ function loop(
 		if (is_string($closureResult) || is_numeric($closureResult)) {
 			$outputString = "$currentFrame $closureResult";
 			$lastMessageLength = strlen($closureResult);
-			fwrite(STDOUT, $outputString);
+			fwrite(fopen('php://output', 'w'), $outputString);
 			usleep(100000);
 			next($frames);
 			if (!current($frames)) {
@@ -47,8 +47,7 @@ function loop(
 		if (is_bool($closureResult) && $closureResult === true) {
 			$stopped = true;
 			removeLastCharsByCount($lastMessageLength + 16);
-			fwrite(STDOUT, $doneText);
-			fwrite(STDOUT, "\n");
+			fwrite(fopen('php://output', 'w'), "$doneText\n");
 		}
 
 		if (is_bool($closureResult) && $closureResult === false) {
