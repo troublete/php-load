@@ -2,10 +2,10 @@
 chdir(__DIR__ . '/..');
 require_once getcwd() . '/vendor/autoload.php';
 
-use function Load\dots;
+use function Load\bar;
 
 $current = 0;
-dots(function () use (&$current) {
+bar(function () use (&$current) {			
 	$current++;
 	if ($current == 100) {
 		return true;
