@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0] - 17.10.2017
+### [Added]
+
+* added positive test
+
+### [Changed]
+
+* changed output stream from stdout to php output buffer
+
 ## [0.1.0] - 17.10.2017
 ### [Added]
 
