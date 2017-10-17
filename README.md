@@ -1,7 +1,7 @@
 # load
 > CLI progress indicator for PHP.
 
-![loading](./load.gif)
+![loading](./demo.gif)
 
 ## Install
 
