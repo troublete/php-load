@@ -28,12 +28,12 @@ function dots(
 }
 
 /**
- * An animated rotated bar spinner
+ * An animated rotating bar spinner
  * @param callable $checkClosure
  * @param string $doneText
  * @return null
  */
-function spinner(
+function bar(
 	callable $checkClosure,
 	string $doneText
 ) {
