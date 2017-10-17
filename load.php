@@ -53,7 +53,7 @@ function loop(
 
 		if (is_bool($closureResult) && $closureResult === false) {
 			removeLastCharsByCount($lastMessageLength + 64);
-			trigger_error('Process failed.', E_USER_ERROR);
+			throw new \Exception('Process failed.');
 		}
 	}
 }
