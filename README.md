@@ -1,6 +1,7 @@
 # load
 ![loading](./demo.gif)
 > CLI progress indicator for PHP.
+
 [![Build Status](https://travis-ci.org/troublete/load.svg?branch=master)](https://travis-ci.org/troublete/load)
 
 ## Install
