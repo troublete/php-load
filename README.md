@@ -79,7 +79,7 @@ Will run an indicator with frames given.
 ## Related Packages
 
 * [Cli](https://github.com/troublete/cli) - It's like meow, but for PHP.
-* [Crayon](https://github.com/troublete/crayon) - A simple functional PHP library for formatting string output 
+* [Crayon](https://github.com/troublete/crayon) - A simple functional PHP library for formatting string output.
 
 ## License
 

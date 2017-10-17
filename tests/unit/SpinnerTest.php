@@ -3,16 +3,10 @@ use function Load\loop;
 
 class SpinnerTest extends \Codeception\Test\Unit
 {
-	public function testLoopPositive() 
-	{
-		ob_start();
-		loop(['.'], function () {return true;}, 'done');
-		$return = ob_get_clean();
-		$this->assertEquals('done', $return);
-	}
-
 	public function testLoopNegative()
 	{
-		
+		$this->tester->expectException(new Exception('Process failed.'), function () {
+			loop(['.'], function () {return false;}, 'done');
+		});
 	}
 }
