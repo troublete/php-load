@@ -2,10 +2,10 @@
 chdir(__DIR__ . '/..');
 require_once getcwd() . '/vendor/autoload.php';
 
-use function Load\bar;
+use function Load\emoji;
 
 $current = 0;
-bar(function () use (&$current) {
+emoji(function () use (&$current) {
 	$current++;
 	if ($current == 100) {
 		return true;

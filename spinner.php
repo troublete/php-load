@@ -48,3 +48,50 @@ function bar(
 		$doneText
 	);
 }
+
+
+/**
+ * An pulsating sphere spinner
+ * @param callable $checkClosure
+ * @param string $doneText
+ * @return null
+ */
+function sphere(
+	callable $checkClosure,
+	string $doneText
+) {
+	loop(
+		[
+			' ',
+			'•',
+			'●',
+			'•',
+			' '
+		],
+		$checkClosure,
+		$doneText
+	);
+}
+
+/**
+ * An emoji spinner
+ * @param callable $checkClosure
+ * @param string $doneText
+ * @return null
+ */
+function emoji(
+	callable $checkClosure,
+	string $doneText
+) {
+	loop(
+		[
+			'❤️',
+			'💛',
+			'💚',
+			'💙',
+			'💜'
+		],
+		$checkClosure,
+		$doneText
+	);
+}
