@@ -18,5 +18,8 @@
     },
     "require": {
         "troublete/crayon": "^1.1"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.3"
     }
 }
