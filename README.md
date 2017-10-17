@@ -48,6 +48,22 @@ Will run an indicator with an rotating bar.
 
 > ℹ️ see function `loop()`
 
+### emoji($checkClosure, $doneText)
+
+Will run an indicator with some emoji hearts.
+
+#### Arguments 
+
+> ℹ️ see function `loop()`
+
+### sphere($checkClosure, $doneText)
+
+Will run an indicator with an pulsating sphere.
+
+#### Arguments 
+
+> ℹ️ see function `loop()`
+
 ### loop($frames, $checkClosure, $doneText)
 
 Will run an indicator with frames given.
