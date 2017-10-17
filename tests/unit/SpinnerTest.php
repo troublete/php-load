@@ -9,4 +9,11 @@ class SpinnerTest extends \Codeception\Test\Unit
 			loop(['.'], function () {return false;}, 'done');
 		});
 	}
+
+	public function testLoopPositive()
+	{
+		loop(['.'], function () {return true;}, 'done');
+		$result = ob_get_contents();
+		$this->assertEquals(1, preg_match('/done/', $result));
+	}
 }
